@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.cef</groupId>
+    <artifactId>jcef-loader</artifactId>
+    <version>{version}</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>jcef-maven</id>
+            <url>https://friwi.me/jcef/maven</url>
+        </repository>
+    </repositories>
+
+    <name>JCef Loader</name>
+    <description>This package is used to load jcef natives at runtime.</description>
+    <url>https://github.com/jcefmaven/jcefloader</url>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://github.com/jcefmaven/jcefloader/blob/master/LICENSE.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>friwidev</id>
+            <name>FriwiDev</name>
+            <email>friwidev@gmail.com</email>
+            <url>https://github.com/FriwiDev</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/jcefmaven/jcefloader/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/jcefmaven/jcefloader</connection>
+        <developerConnection>scm:git:https://github.com/jcefmaven/jcefloader</developerConnection>
+        <tag>${version}</tag>
+        <url>https://github.com/jcefmaven/jcefloader</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.cef</groupId>
+            <artifactId>jcef-api</artifactId>
+            <version>{version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.0.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
