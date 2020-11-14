@@ -177,7 +177,6 @@ public class JCefLoader {
                 File out = new File(versionDir, zipEntry.getName());
                 out.getParentFile().mkdirs();
                 out.createNewFile();
-                System.out.println(out.getAbsolutePath());
                 FileOutputStream fos = new FileOutputStream(out);
                 byte[] buffer = new byte[4096];
                 while(true){
