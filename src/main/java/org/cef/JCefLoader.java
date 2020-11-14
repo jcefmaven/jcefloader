@@ -19,20 +19,20 @@ public class JCefLoader {
     private static boolean loaded = false;
 
     /**
-     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.
+     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.<br/>
+     * <br/>
+     * When run from a bundle:<br/>
      *
-     * When run from a bundle:
-     *
-     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.
-     *
-     * When run without a bundle:
+     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.<br/>
+     * <br/>
+     * When run without a bundle:<br/>
      *
      * When included natives are a different version than the installed version, REMOVES install directory to also
      * remove all other versions.
      * MAKE SURE THAT NO OTHER REQUIRED DATA APART FROM JCEF RESIDES IN INSTALL DIRECTORY!
      * Extracts natives to version directory inside of the install directory, if needed.
-     * Loads libraries from extracted natives, initialises jcef.
-     *
+     * Loads libraries from extracted natives, initialises jcef.<br/>
+     * <br/>
      * Install Dir: "cef_bundle" relative to work dir of the JVM process
      * Cef settings: Default settings
      * @param args The command line arguments to pass to the CEF environment. These can be independent from your program
@@ -46,20 +46,20 @@ public class JCefLoader {
     }
 
     /**
-     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.
+     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.<br/>
+     * <br/>
+     * When run from a bundle:<br/>
      *
-     * When run from a bundle:
-     *
-     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.
-     *
-     * When run without a bundle:
+     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.<br/>
+     * <br/>
+     * When run without a bundle:<br/>
      *
      * When included natives are a different version than the installed version, REMOVES install directory to also
      * remove all other versions.
      * MAKE SURE THAT NO OTHER REQUIRED DATA APART FROM JCEF RESIDES IN INSTALL DIRECTORY!
      * Extracts natives to version directory inside of the install directory, if needed.
-     * Loads libraries from extracted natives, initialises jcef.
-     *
+     * Loads libraries from extracted natives, initialises jcef.<br/>
+     * <br/>
      * Install Dir: As specified by the installDir param
      * Cef settings: Default settings
      * @param installDir The directory to use when extracting natives. THIS DIRECTORY WILL BE DELETED WHEN UPDATING
@@ -75,20 +75,20 @@ public class JCefLoader {
     }
 
     /**
-     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.
+     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.<br/>
+     * <br/>
+     * When run from a bundle:<br/>
      *
-     * When run from a bundle:
-     *
-     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.
-     *
-     * When run without a bundle:
+     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.<br/>
+     * <br/>
+     * When run without a bundle:<br/>
      *
      * When included natives are a different version than the installed version, REMOVES install directory to also
      * remove all other versions.
      * MAKE SURE THAT NO OTHER REQUIRED DATA APART FROM JCEF RESIDES IN INSTALL DIRECTORY!
      * Extracts natives to version directory inside of the install directory, if needed.
-     * Loads libraries from extracted natives, initialises jcef.
-     *
+     * Loads libraries from extracted natives, initialises jcef.<br/>
+     * <br/>
      * Install Dir: "cef_bundle" relative to work dir of the JVM process
      * Cef settings: As specified by the settings param
      * @param settings The CEF settings to use
@@ -103,20 +103,20 @@ public class JCefLoader {
     }
 
     /**
-     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.
+     * Installs JCEF if needed and constructs a {@see org.cef.CefApp} instance.<br/>
+     * <br/>
+     * When run from a bundle:<br/>
      *
-     * When run from a bundle:
-     *
-     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.
-     *
-     * When run without a bundle:
+     * Loads libraries from bundle, initialises JCEF. Does not auto update old versions.<br/>
+     * <br/>
+     * When run without a bundle:<br/>
      *
      * When included natives are a different version than the installed version, REMOVES install directory to also
      * remove all other versions.
      * MAKE SURE THAT NO OTHER REQUIRED DATA APART FROM JCEF RESIDES IN INSTALL DIRECTORY!
      * Extracts natives to version directory inside of the install directory, if needed.
-     * Loads libraries from extracted natives, initialises jcef.
-     *
+     * Loads libraries from extracted natives, initialises jcef.<br/>
+     * <br/>
      * Install Dir: As specified by the installDir param
      * Cef settings: As specified by the settings param
      * @param installDir The directory to use when extracting natives. THIS DIRECTORY WILL BE DELETED WHEN UPDATING
