@@ -213,6 +213,10 @@ public class JCefLoader {
             System.load(new File(versionDir, "libcef.dll").getAbsolutePath());
             System.load(new File(versionDir, "jcef.dll").getAbsolutePath());
         } else if (OS.isLinux()) {
+            //Make jcef_helper executable
+            File jcef_helper = new File(versionDir, "jcef_helper");
+            jcef_helper.setExecutable(true);
+            //Load jcef native library
             System.load(new File(versionDir, "libjcef.so").getAbsolutePath());
             //Initialize cef
             boolean success = CefApp.startup(args);
